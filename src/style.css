@@ -92,4 +92,68 @@ header h1 {
 }
 
 /* Section 2 */
-.creations-box{}
+.creations-box {
+   margin: 150px;
+}
+.creations-title {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 80px;
+}
+.creations-title h2 {
+   text-transform: uppercase;
+   font-family: "Josefin Sans", sans-serif;
+   font-weight: 300;
+   font-size: 36px;
+}
+.creations-title p {
+   text-transform: uppercase;
+   font-family: "Josefin Sans", sans-serif;
+   font-size: 16px;
+   border: 2px solid var(--Grey_200);
+   padding: 13px 20px;
+}
+.grid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   color: var(--White);
+   text-transform: uppercase;
+   font-family: "Josefin Sans", sans-serif;
+   font-size: 28px;
+}
+.grid_pos {
+   position: relative;
+}
+.grid_pos p {
+   position: absolute;
+   bottom: 50px;
+   left: 30px;
+   width: 149px;
+}
+
+/* Footer */
+footer {
+   background-color: var(--Black);
+   color: var(--White);
+}
+.logo-footer {
+   margin: 0 150px;
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.logo-footer .icon-footer img{
+    margin-right: 15px
+}
+.nav-footer {
+   margin: 0 150px;
+   padding: 0 20px 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.nav-footer p {
+   color: var(--Grey_200);
+}
