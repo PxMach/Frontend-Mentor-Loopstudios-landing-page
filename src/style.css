@@ -22,7 +22,7 @@ body {
 
 /* header */
 header {
-   background-image: url("/images/desktop/image-hero.jpg");
+   background-image: url("./images/desktop/image-hero.jpg");
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -178,3 +178,5 @@ footer {
 .nav-footer p {
    color: var(--Grey_200);
 }
+
+/* Media queri */
