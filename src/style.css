@@ -45,6 +45,11 @@ nav ul li {
 }
 ul li a {
    color: var(--White);
+   transition: all 0.3s ease;
+}
+ul li a:hover {
+   border-bottom: 2px solid var(--White);
+   padding-bottom: 5px;
 }
 
 header h1 {
@@ -113,6 +118,11 @@ header h1 {
    font-size: 16px;
    border: 2px solid var(--Grey_200);
    padding: 13px 20px;
+   cursor: pointer;
+}
+.creations-title p:hover {
+   background-color: var(--Black);
+   color: var(--White);
 }
 .grid {
    display: grid;
@@ -124,6 +134,11 @@ header h1 {
 }
 .grid_pos {
    position: relative;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+.grid_pos:hover {
+   opacity: 0.6;
 }
 .grid_pos p {
    position: absolute;
@@ -144,8 +159,14 @@ footer {
    justify-content: space-between;
    align-items: center;
 }
-.logo-footer .icon-footer img{
-    margin-right: 15px
+.logo-footer .icon-footer img {
+   margin-right: 15px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+.logo-footer .icon-footer img:hover {
+   border-bottom: 2px solid var(--White);
+   padding-bottom: 5px;
 }
 .nav-footer {
    margin: 0 150px;
