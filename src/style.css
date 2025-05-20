@@ -185,9 +185,9 @@ footer {
 }
 
 /* Media queri */
-@media (max-width: 375px) {
+@media (max-width: 376px) {
    body {
-      width: 378px;
+      width: 376px;
    }
    header {
       width: 375px;
@@ -237,9 +237,79 @@ footer {
       left: 50px;
    }
    header h1.disable {
-    /* none */
+      /* none */
       display: none;
    }
 
    /* main */
+   /* Section 1 */
+   .description-box {
+      margin: 50px 28px;
+      /* position: relative; */
+   }
+   .description-box img {
+      width: 320px;
+      z-index: 1;
+   }
+   .description-text {
+      margin-top: 40px;
+      padding: 0px;
+      width: 300px;
+      position: initial;
+      text-align: center;
+   }
+
+   /* Section 2 */
+   .creations-box {
+      margin: 50px 28px;
+      position: relative;
+      height: 1600px;
+   }
+   .creations-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   /* .creations-title h2 {
+      text-transform: uppercase;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 300;
+      font-size: 36px;
+   } */
+   .creations-title p {
+      /* text-transform: uppercase;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 16px;
+      border: 2px solid var(--Grey_200);
+      cursor: pointer; */
+      width: 150px;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      /* padding: 13px 20px; */
+   }
+   /* .creations-title p:hover {
+      background-color: var(--Black);
+      color: var(--White);
+   } */
+   .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      /* color: var(--White);
+      text-transform: uppercase;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 28px; */
+   }
+   .grid_pos {
+      /* position: relative;
+      cursor: pointer;
+      transition: all 0.3s ease; */
+   }
+   .grid_pos img {
+      height: 150px;
+      width: 320px;
+      object-position: center;
+      object-fit: cover;
+   }
 }
