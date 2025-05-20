@@ -22,7 +22,7 @@ body {
 
 /* header */
 header {
-   background-image: url("./images/desktop/image-hero.jpg");
+   background-image: url("../images/desktop/image-hero.jpg");
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
