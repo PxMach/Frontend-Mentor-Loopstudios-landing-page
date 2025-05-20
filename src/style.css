@@ -186,53 +186,48 @@ footer {
 
 /* Media queri */
 @media (max-width: 375px) {
-    body{
-        width: 378px;
-    }
-
+   body {
+      width: 378px;
+   }
    header {
-      /* background-image: url("../images/desktop/image-hero.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      min-height: 100vh;
-      position: relative; */
-      /*  */
       width: 375px;
    }
    .nav-box {
+      display: block;
+      padding: 50px 20px;
+      margin: 0 0px;
+   }
+   .nav-box.active {
+      display: block;
+      background-color: black;
+      height: 642px;
+   }
+   .nav-box .nav-mobile-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 50px 20px;
-      margin: 0 0px;
-      color: var(--White);
+      margin-bottom: 120px;
    }
-   .nav-header {
+   .nav-mobile-header .icon-close {
+      /* flex */
       display: none;
-      flex-direction: column;
-      background-color: var(--Black);
-   }
-   .icon-close {
-      display: initial;
       width: 24px;
    }
-   nav ul {
-      display: flex;
-   }
-   /* nav ul li {
-      margin-right: 15px;
-   }
-   ul li a {
-      color: var(--White);
-      transition: all 0.3s ease;
-   }
-   ul li a:hover {
-      border-bottom: 2px solid var(--White);
-      padding-bottom: 5px;
-   } */
-   .icon-hamburger {
+   .nav-mobile-header .icon-hamburger {
       display: initial;
+   }
+   .icon-hamburger.disable {
+      display: none;
+      /* none */
+   }
+   /* .nav-header=== nav */
+   .nav-header ul {
+      display: none;
+      /* flex */
+      flex-direction: column;
+      gap: 20px;
+      font-size: 26px;
+      font-weight: 300;
    }
    header h1 {
       width: 220px;
@@ -241,4 +236,10 @@ footer {
       position: absolute;
       left: 50px;
    }
+   header h1.disable {
+    /* none */
+      display: none;
+   }
+
+   /* main */
 }
