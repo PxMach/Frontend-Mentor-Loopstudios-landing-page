@@ -51,7 +51,12 @@ ul li a:hover {
    border-bottom: 2px solid var(--White);
    padding-bottom: 5px;
 }
-
+.icon-hamburger {
+   display: none;
+}
+.icon-close {
+   display: none;
+}
 header h1 {
    width: 650px;
    padding: 40px;
@@ -59,7 +64,7 @@ header h1 {
    color: var(--White);
    font-weight: 300;
    font-family: "Josefin Sans", sans-serif;
-   border: 1px solid var(--White);
+   border: 3px solid var(--White);
    position: absolute;
    top: 350px;
    left: 150px;
@@ -180,3 +185,60 @@ footer {
 }
 
 /* Media queri */
+@media (max-width: 375px) {
+    body{
+        width: 378px;
+    }
+
+   header {
+      /* background-image: url("../images/desktop/image-hero.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      position: relative; */
+      /*  */
+      width: 375px;
+   }
+   .nav-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 20px;
+      margin: 0 0px;
+      color: var(--White);
+   }
+   .nav-header {
+      display: none;
+      flex-direction: column;
+      background-color: var(--Black);
+   }
+   .icon-close {
+      display: initial;
+      width: 24px;
+   }
+   nav ul {
+      display: flex;
+   }
+   /* nav ul li {
+      margin-right: 15px;
+   }
+   ul li a {
+      color: var(--White);
+      transition: all 0.3s ease;
+   }
+   ul li a:hover {
+      border-bottom: 2px solid var(--White);
+      padding-bottom: 5px;
+   } */
+   .icon-hamburger {
+      display: initial;
+   }
+   header h1 {
+      width: 220px;
+      padding: 30px;
+      font-size: 26px;
+      position: absolute;
+      left: 50px;
+   }
+}
