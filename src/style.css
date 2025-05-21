@@ -151,6 +151,9 @@ header h1 {
    left: 30px;
    width: 149px;
 }
+.hide {
+   display: none; /*hide is the last four grid_pos(5,6,7,8) */
+}
 
 /* Footer */
 footer {
@@ -208,27 +211,36 @@ footer {
       align-items: center;
       margin-bottom: 120px;
    }
+
    .nav-mobile-header .icon-close {
-      /* flex */
       display: none;
       width: 24px;
    }
+   .nav-mobile-header .icon-close.active {
+      display: flex;
+   }
+
    .nav-mobile-header .icon-hamburger {
       display: initial;
    }
-   .icon-hamburger.disable {
+
+   .nav-mobile-header .icon-hamburger.disable {
       display: none;
-      /* none */
    }
+
    /* .nav-header=== nav */
    .nav-header ul {
       display: none;
-      /* flex */
+   }
+
+   .nav-header ul.active {
+      display: flex;
       flex-direction: column;
       gap: 20px;
       font-size: 26px;
       font-weight: 300;
    }
+
    header h1 {
       width: 220px;
       padding: 30px;
@@ -262,7 +274,8 @@ footer {
    .creations-box {
       margin: 50px 28px;
       position: relative;
-      height: 1600px;
+      min-height: 900px; /*problem*/
+      max-height: 1600px;
    }
    .creations-title {
       display: flex;
