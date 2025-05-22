@@ -7,7 +7,6 @@
 }
 
 * {
-   font-family: "Alata", sans-serif;
    font-family: "Josefin Sans", sans-serif;
    padding: 0;
    margin: 0;
@@ -155,7 +154,17 @@ header h1 {
    width: 149px;
 }
 .hide {
-   display: none; /*hide is the last four grid_pos(5,6,7,8) */
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.5s ease, visibility 0.5s ease;
+   height: 0;
+   overflow: hidden;
+}
+
+.hide.show {
+   opacity: 1;
+   visibility: visible;
+   height: auto;
 }
 
 /* Footer */

@@ -10,14 +10,14 @@ const h1 = document.querySelector("h1");
 shows.forEach((show) => {
    show.addEventListener("click", () => {
       hides.forEach((hide) => {
-         if (hide.style.display === "none") {
-            hide.style.display = "block";
-            shows.textContent = "See less";
-         } else {
-            hide.style.display = "none";
-            shows.textContent = "See all";
-         }
+         hide.classList.toggle("show");
       });
+
+      if (hides[0].classList.contains("show")) {
+         shows.forEach((show) => (show.textContent = "See less"));
+      } else {
+         shows.forEach((show) => (show.textContent = "See all"));
+      }
    });
 });
 
