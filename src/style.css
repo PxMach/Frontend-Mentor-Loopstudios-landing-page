@@ -72,6 +72,9 @@ header h1 {
 }
 
 /* Main */
+.mobile {
+   display: none;
+}
 /* Section 1 */
 .description-box {
    margin: 150px;
@@ -193,6 +196,7 @@ footer {
       width: 376px;
    }
    header {
+      background-image: url("../images/mobile/image-hero.jpg");
       width: 375px;
    }
    .nav-box {
@@ -203,7 +207,7 @@ footer {
    .nav-box.active {
       display: block;
       background-color: black;
-      height: 642px;
+      height: 667px;
    }
    .nav-box .nav-mobile-header {
       display: flex;
@@ -254,6 +258,15 @@ footer {
    }
 
    /* main */
+   /* main {
+      height: 1800px;
+   } */
+   .desktop {
+      display: none;
+   }
+   .mobile {
+      display: block;
+   }
    /* Section 1 */
    .description-box {
       margin: 50px 28px;
@@ -274,7 +287,7 @@ footer {
    .creations-box {
       margin: 50px 28px;
       position: relative;
-      min-height: 900px; /*problem*/
+      min-height: 900px;
       max-height: 1600px;
    }
    .creations-title {
