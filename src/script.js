@@ -1,4 +1,4 @@
-const shows = document.querySelector(".shows");
+const shows = document.querySelectorAll(".shows");
 const gridPos = document.querySelector(".grid_pos");
 const hides = document.querySelectorAll(".hide");
 const navBox = document.querySelector(".nav-box");
@@ -7,15 +7,17 @@ const iconClose = document.querySelector(".icon-close");
 const ul = document.querySelector(".nav-header ul");
 const h1 = document.querySelector("h1");
 
-shows.addEventListener("click", () => {
-   hides.forEach((hide) => {
-      if (hide.style.display === "none") {
-         hide.style.display = "block";
-         shows.textContent = "See less";
-      } else {
-         hide.style.display = "none";
-         shows.textContent = "See all";
-      }
+shows.forEach((show) => {
+   show.addEventListener("click", () => {
+      hides.forEach((hide) => {
+         if (hide.style.display === "none") {
+            hide.style.display = "block";
+            shows.textContent = "See less";
+         } else {
+            hide.style.display = "none";
+            shows.textContent = "See all";
+         }
+      });
    });
 });
 
